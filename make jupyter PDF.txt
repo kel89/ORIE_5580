@@ -1,0 +1,15 @@
+How to make Jupyter Notebook to PRETTY pdf
+
+Do notebook as you would, no need to include a header
+
+convert it to a .tex file:
+go to command line, and navigate to directoy with .ipynb file
+type in:
+	jupyter nbconvert [file_name] --to latex
+
+Then open the .tex file
+Delete the \maketitle command
+add to preable \setlength{\parindent}{.0in}
+Make the sections real sections (not subsections)
+adjust your bullets, which you had as bold, by adding right before them
+.25inches of * vspace 
